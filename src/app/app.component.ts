@@ -50,9 +50,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     console.log('onChallengeInput: ', challengeDescription);
   }
 
-  onLogout() {
+ onLogout(){
     this.uiService.toggleDrawer();
-  }
+ }
 
   ngOnDestroy() {
     if (this.drawerSub) {

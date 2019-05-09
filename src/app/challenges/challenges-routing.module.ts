@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren:
       '~/app/challenges/challenge-edit/challenge-edit.module#ChallengeEditModule'
   },
-  { path: '', redirectTo: '/challenges/tabs', pathMatch: 'full' }
+  {path: '', redirectTo: 'challenges/tabs', pathMatch: 'full'}
 ];
 
 @NgModule({
