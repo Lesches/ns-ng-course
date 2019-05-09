@@ -17,7 +17,15 @@ export class ChallengeEditComponent implements OnInit {
   ngOnInit() {
    this.pageRoute.activatedRoute.subscribe(activatedRoute => {
      activatedRoute.paramMap.subscribe(paramMap => {
-       console.log(paramMap.get('mode'));
+       if (!paramMap.has('mode')) {
+         this.isCreating = true;
+       }
+
+       else {
+        this.isCreating = paramMap.get('mode') !== 'edit';
+       }
+
+
      });
    });
 

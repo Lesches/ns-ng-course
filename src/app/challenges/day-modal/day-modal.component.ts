@@ -13,7 +13,7 @@ export class DayModalComponent implements OnInit {
   constructor(private modalParams: ModalDialogParams) {}
 
   ngOnInit() {
-    this.loadedDate = (this.modalParams.context as { date: Date }).date;
+    this.loadedDate = (this.modalParams.context as {date: Date}).date
   }
 
   onHandleInput(action: string) {

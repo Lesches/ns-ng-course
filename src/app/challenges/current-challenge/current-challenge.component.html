@@ -2,19 +2,18 @@
   <ActionItem
     ios.position="right"
     android.position="actionBar"
-    nsRouterLink="/challenges/replace"
-    pageTransition="slideLeft"
-  >
-    <Label text="Replace"></Label
-  ></ActionItem>
+   nsRouterLink="/challenges/replace"
+    pageTransition="slideLeft">
+
+    <Label text="Replace"></Label>
+  </ActionItem>
   <ActionItem
     ios.position="right"
     android.position="actionBar"
     nsRouterLink="/challenges/edit"
-    pageTransition="slideLeft"
-  >
-    <Label text="Edit"></Label
-  ></ActionItem>
+    pageTransition="slideLeft">
+    <Label text="Edit"></Label>
+  </ActionItem>
 </ns-action-bar>
 <StackLayout>
   <Label
@@ -22,5 +21,6 @@
     text="The current challenge"
     horizontalAlignment="center"
   ></Label>
-  <Button text="Change Status" (tap)="onChangeStatus()"></Button>
+  <Button text="Change status" (tap)="onChangeStatus()"></Button>
+  <Button text="Replace" nsRouterLink="/challenges/replace"></Button>
 </StackLayout>
